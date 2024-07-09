@@ -1,0 +1,321 @@
+Interviewer: Define network. 
+
+Student: 
+
+Network: A network refers to a collection of interconnected devices (nodes) such as computers, servers, printers, or other devices, that can communicate and share resources with each other. Networks can be classified based on their size (LAN, WAN), their geographical coverage, and the technologies they use to connect devices. 
+
+ 
+
+Interviewer: What do you mean by network topology, and explain types of them? 
+
+Student: 
+
+Network Topology: Network topology refers to the physical or logical layout of nodes and links in a network. Different types include: 
+
+Bus Topology: All devices are connected to a single central cable (bus). 
+
+Star Topology: All devices are connected to a central hub or switch. 
+
+Ring Topology: Devices are connected in a circular manner, forming a closed loop. 
+
+Mesh Topology: Devices are interconnected with multiple paths between them. 
+
+Hybrid Topology: Combination of two or more different topologies. 
+
+ 
+
+Interviewer: Define bandwidth, node, and link? 
+
+Student: 
+
+Bandwidth: Bandwidth refers to the maximum data transfer rate of a network or internet connection, usually measured in bits per second (bps), kilobits per second (kbps), or megabits per second (Mbps). 
+
+Node: A node is a device or a junction point in a network where data can be transmitted, received, or processed. Examples include computers, servers, routers, switches, or any device connected to the network. 
+
+Link: A link refers to the communication pathway that connects two or more nodes in a network. It can be physical (e.g., cables, fiber optics) or wireless (e.g., radio waves, infrared). 
+
+ 
+
+Interviewer: Explain TCP/IP model. 
+
+Student: 
+
+The TCP/IP model is a conceptual framework used for communication protocols in networks. It consists of four layers: 
+
+Application Layer: Provides high-level APIs and protocols for communication between applications. 
+
+Transport Layer: Handles end-to-end communication and ensures reliable data transfer. Includes protocols like TCP (Transmission Control Protocol) and UDP (User Datagram Protocol). 
+
+Internet Layer: Responsible for routing packets across different networks. Includes protocols like IP (Internet Protocol). 
+
+Link Layer: Handles communication within the same network segment. Includes protocols like Ethernet. 
+
+ 
+
+Interviewer: Layers of OSI model. 
+
+Student: 
+
+The OSI (Open Systems Interconnection) model consists of seven layers: 
+
+Physical Layer: Deals with physical connections and electrical signals. 
+
+Data Link Layer: Provides error-free data transfer over a physical link. 
+
+Network Layer: Handles routing and forwarding of data packets. 
+
+Transport Layer: Provides end-to-end communication and error recovery. 
+
+Session Layer: Manages sessions and dialogues between devices. 
+
+Presentation Layer: Translates data into a format that the application layer can process. 
+
+Application Layer: Provides network services directly to user applications. 
+
+ 
+
+Interviewer: Significance of Data Link Layer. 
+
+Student: 
+
+The Data Link Layer ensures reliable data transfer between nodes on the same local network segment. It handles framing, error detection, and flow control to ensure data integrity and efficient communication. It also manages access to the physical medium and provides addressing (MAC addresses) for devices on the network. 
+
+ 
+
+Interviewer: Define gateway, difference between gateway and router. 
+
+Student: 
+
+Gateway: A gateway is a network node that serves as an entrance to another network. It translates data between different types of networks (e.g., between LAN and the internet) using different protocols or technologies. 
+
+Difference: While both gateway and router connect networks, a router specifically forwards data packets between networks based on IP addresses. A gateway, on the other hand, translates data between networks using different protocols and may perform additional functions like protocol conversion or security enforcement. 
+
+ 
+
+Interviewer: What does ping command do? 
+
+Student: 
+
+The ping command sends a small packet of data (ICMP echo request) to a specified network device or host to test connectivity and measure round-trip time. It is used to verify that a networked device is reachable and to troubleshoot network connectivity issues. 
+
+ 
+
+Interviewer: What is DNS, DNS forwarder, NIC? 
+
+Student: 
+
+DNS (Domain Name System): DNS is a hierarchical decentralized naming system for computers, services, or other resources connected to the internet or a private network. It translates domain names (e.g., google.com) into IP addresses (e.g., 172.217.6.46) that computers use to identify each other on the network. 
+
+DNS Forwarder: A DNS forwarder is a DNS server that forwards DNS queries it cannot resolve locally to another DNS server. It helps improve DNS resolution efficiency and speed up query responses. 
+
+NIC (Network Interface Card): A NIC is a hardware component that enables a computer or other device to connect to a network. It provides physical access to the network medium (e.g., Ethernet cable, Wi-Fi) and typically includes a MAC address for network identification. 
+
+ 
+
+Interviewer: What is MAC address? 
+
+Student: 
+
+A MAC (Media Access Control) address is a unique identifier assigned to a network interface controller (NIC) for communication on a network segment. It is a hardware address embedded into the NIC during manufacturing and is used for identifying devices at the data link layer of the OSI model. 
+
+ 
+
+Interviewer: What is IP address, private IP address, public IP address, APIPA? 
+
+Student: 
+
+IP Address: An IP (Internet Protocol) address is a numerical label assigned to each device connected to a computer network that uses the IP for communication. It identifies the device's location in the network and allows data to be routed to it. 
+
+Private IP Address: A private IP address is an IP address reserved for internal use within a private network. They are not routable on the internet and are typically used for devices within a home or business network. Examples include addresses in the ranges 192.168.x.x, 172.16.x.x - 172.31.x.x, and 10.x.x.x. 
+
+Public IP Address: A public IP address is an IP address that is accessible on the internet. It uniquely identifies a device connected directly to the internet or a public network. Public IP addresses are assigned by ISPs (Internet Service Providers) and are routable on the internet. 
+
+APIPA (Automatic Private IP Addressing): APIPA is a feature in Windows operating systems that automatically assigns a private IP address to a computer when a DHCP server is not available. It uses the range 169.254.x.x and is used as a temporary measure until a DHCP server is found. 
+
+ 
+
+Interviewer: Difference between IPv4 and IPv6. 
+
+Student: 
+
+IPv4 (Internet Protocol version 4): IPv4 uses a 32-bit address scheme, allowing for approximately 4.3 billion unique addresses. It is the most widely used IP version on the internet but is limited in addressing space. 
+
+IPv6 (Internet Protocol version 6): IPv6 uses a 128-bit address scheme, providing significantly more IP addresses (approximately 3.4 × 10^38) compared to IPv4. It offers improvements in security, efficiency, and support for new technologies but requires infrastructure upgrades for widespread adoption. 
+
+ 
+
+Interviewer: What is subnet? 
+
+Student: 
+
+A subnet (subnetwork) is a logical subdivision of an IP network. It allows a larger network to be divided into smaller, manageable networks for organizational or security purposes. Subnetting involves dividing a network into smaller segments using subnet masks to identify the network and host portions of IP addresses. 
+
+ 
+
+Interviewer: Explain Firewalls. 
+
+Student: 
+
+Firewalls are network security devices or software that monitor and control incoming and outgoing network traffic based on predetermined security rules. They act as barriers between trusted internal networks (e.g., LAN) and untrusted external networks (e.g., the internet), filtering traffic to prevent unauthorized access and protect against threats. 
+
+ 
+
+Interviewer: Different types of delays. 
+
+Student: 
+
+Propagation Delay: The time taken for a signal to travel from the sender to the receiver through the medium (e.g., cables, fiber optics). 
+
+Transmission Delay: The time taken to push all the bits of a packet into the link. 
+
+Processing Delay: The time taken by the router or a switch to process the packet. 
+
+Queueing Delay: The time spent waiting in a queue to be transmitted onto the link. 
+
+ 
+
+Interviewer: Explain 3-way handshaking. 
+
+Student: 
+
+3-way handshaking is a process used in TCP/IP communication to establish a reliable connection between two devices (client and server). It involves three steps: 
+
+SYN (Synchronize): The client sends a SYN packet to the server to initiate a connection request. 
+
+SYN-ACK (Synchronize-Acknowledge): The server responds with a SYN-ACK packet, acknowledging the client's request and signaling readiness to establish a connection. 
+
+ACK (Acknowledge): The client sends an ACK packet back to the server, confirming receipt of the SYN-ACK packet and completing the connection establishment process. 
+
+ 
+
+Interviewer: What is a server-side load balancer? 
+
+Student: 
+
+A server-side load balancer is a hardware or software-based device that distributes incoming network or application traffic across multiple servers or resources in a server farm or data center. It helps optimize resource utilization, improve responsiveness, and ensure high availability by evenly distributing workload among servers based on predefined algorithms (e.g., round-robin, least connections). 
+
+ 
+
+Interviewer: Explain the RSA Algorithm. 
+
+Student: 
+
+RSA (Rivest-Shamir-Adleman) is a public-key encryption algorithm widely used for secure data transmission and digital signatures. It involves the use of two keys: a public key for encryption and a private key for decryption. The security of RSA is based on the difficulty of factoring large prime numbers. 
+
+ 
+
+Interviewer: What is HTTP and HTTPS protocol? 
+
+Student: 
+
+HTTP (Hypertext Transfer Protocol): HTTP is a protocol used for transmitting hypertext documents on the World Wide Web. It defines how messages are formatted and transmitted between web servers and clients (browsers). 
+
+HTTPS (Hypertext Transfer Protocol Secure): HTTPS is the secure version of HTTP that encrypts data transmitted between a web server and a client to ensure confidentiality and integrity. It uses SSL/TLS protocols for encryption and requires an SSL certificate for authentication. 
+
+ 
+
+Interviewer: What is SMTP protocol? 
+
+Student: 
+
+SMTP (Simple Mail Transfer Protocol): SMTP is a protocol used for sending and receiving email messages between servers. It defines how email messages are relayed and delivered over the internet. SMTP servers handle outgoing mail (from sender to receiver) and use other protocols like POP3 or IMAP for incoming mail retrieval. 
+
+ 
+
+Interviewer: TCP and UDP protocol, prepare differences. 
+
+Student: 
+
+TCP (Transmission Control Protocol): TCP is a connection-oriented protocol that provides reliable, ordered, and error-checked delivery of data packets between applications. It ensures data integrity through acknowledgment and retransmission mechanisms, making it suitable for applications that require reliable transmission (e.g., web browsing, file transfer). 
+
+UDP (User Datagram Protocol): UDP is a connectionless protocol that offers minimal overhead and does not guarantee delivery or error-checking of data packets. It is used for applications where speed and efficiency are prioritized over reliability, such as real-time multimedia streaming, online gaming, and DNS. 
+
+ 
+
+Interviewer: What happens when you enter “google.com” (very very famous question)? 
+
+Student: 
+
+When you enter "google.com" in a web browser: 
+
+The browser sends a DNS query to a DNS server to resolve "google.com" into an IP address. 
+
+The DNS server responds with the IP address of Google's servers (e.g., 172.217.6.46). 
+
+The browser establishes a TCP connection to the server at the resolved IP address on port 80 (HTTP) or port 443 (HTTPS). 
+
+The browser sends an HTTP request for the webpage associated with "google.com". 
+
+The server responds with the requested webpage, which the browser then renders and displays to the user. 
+
+ 
+
+Interviewer: Hub vs Switch. 
+
+Student: 
+
+Hub: A hub is a basic networking device that connects multiple Ethernet devices in a network, operating at the physical layer (Layer 1) of the OSI model. It broadcasts data to all connected devices, causing collisions and limiting network performance and security. 
+
+Switch: A switch is an intelligent networking device that operates at the data link layer (Layer 2) of the OSI model. It forwards data only to the intended recipient device based on MAC addresses, improving network efficiency by reducing collisions and providing better security and bandwidth management compared to hubs. 
+
+ 
+
+Interviewer: VPN, advantages and disadvantages of it. 
+
+Student: 
+
+VPN (Virtual Private Network): A VPN is a secure and encrypted connection established over a public network (e.g., the internet) to provide privacy and security for data transmission between remote users and private networks. Advantages include: 
+
+Enhanced security and privacy by encrypting data transmissions. 
+
+Remote access to private network resources from anywhere. 
+
+Bypassing geographical restrictions for accessing content. 
+
+Disadvantages include: 
+
+Potential decrease in network speed due to encryption overhead. 
+
+Dependency on reliable internet connection for consistent performance. 
+
+Concerns over trustworthiness of VPN service providers. 
+
+ 
+
+Interviewer: LAN. 
+
+Student: 
+
+LAN (Local Area Network): A LAN is a network that connects computers and devices within a limited geographical area, such as a home, office building, or campus. It allows devices to communicate and share resources (e.g., printers, files) locally using Ethernet or Wi-Fi technology. 
+
+ 
+
+Interviewer: What are the advantages and disadvantages of LAN (Local Area Network)? 
+
+Student: 
+
+Advantages: 
+
+Enables efficient resource sharing like printers and files, reducing costs. 
+
+Centralized data management simplifies backups and enhances security. 
+
+Facilitates fast communication through email and collaborative tools. 
+
+Cost-effective compared to wider networks. 
+
+Supports high-speed data transfers due to direct connections. 
+
+Disadvantages: 
+
+Limited to a specific geographical area. 
+
+Security vulnerabilities without proper safeguards. 
+
+Requires significant initial investment in infrastructure. 
+
+Susceptible to congestion during peak usage. 
+
+Scaling up can be complex and expensive. 
+
+ 
