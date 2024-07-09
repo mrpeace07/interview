@@ -1,0 +1,209 @@
+Iterviewer: What is DBMS? Mention advantages.
+
+Student:
+
+DBMS (Database Management System) is a software system that allows users to define, create, maintain, and control access to databases. Advantages include:
+Data Independence: Separation of data from applications, allowing easier maintenance and modifications.
+Efficient Data Retrieval: Supports fast retrieval and querying of data.
+Data Security: Provides mechanisms to control access to data and ensure data integrity.
+Concurrency Control: Manages simultaneous access to data by multiple users or applications.
+Data Integrity: Ensures accuracy and consistency of data through validation rules and constraints.
+
+Interviewer: What is a Database?
+
+Student:
+
+A database is a structured collection of data organized and stored electronically. It typically contains tables, records (rows), and fields (columns) to store, retrieve, and manipulate data efficiently.
+Interviewer: What is a database system?
+
+Student:
+
+A database system includes a DBMS along with the database itself and applications that interact with it. It manages data storage, retrieval, and manipulation, providing an interface between users and the database.
+Interviewer: What is RDBMS? Properties?
+
+Student:
+
+RDBMS (Relational Database Management System) is a type of DBMS that stores data in a structured format using tables and enforces relationships between data elements. Properties include:
+Tabular Structure: Data is organized into tables (relations) consisting of rows (tuples) and columns (attributes).
+Data Integrity: Supports constraints like primary keys, foreign keys, and referential integrity to maintain data accuracy.
+SQL Support: Provides a standardized language (SQL) for querying and managing relational databases.
+Normalization: Ensures efficient storage and reduces redundancy through normalization techniques.
+ACID Transactions: Guarantees transactional reliability with ACID properties (Atomicity, Consistency, Isolation, Durability).
+Interviewer: Types of database languages?
+
+Student:
+
+Types of database languages include:
+DDL (Data Definition Language): Defines and manages database structure (e.g., CREATE, ALTER, DROP).
+DML (Data Manipulation Language): Manages data within the database (e.g., INSERT, UPDATE, DELETE).
+DDL (Data Control Language): Controls access to data (e.g., GRANT, REVOKE).
+DQL (Data Query Language): Retrieves data from the database (e.g., SELECT).
+Interviewer: ACID properties.
+
+Student:
+
+ACID properties ensure reliability and consistency of transactions in a DBMS:
+Atomicity: Ensures all operations in a transaction complete successfully or are rolled back if any fails.
+Consistency: Ensures data remains consistent before and after transactions.
+Isolation: Ensures transactions are executed independently without interference.
+Durability: Guarantees that committed transactions are permanently stored and recovered in case of system failure.
+Interviewer: Difference between vertical and horizontal scaling.
+
+Student:
+
+Vertical Scaling: Involves increasing the capacity of a single server by adding more resources (e.g., CPU, RAM) to handle increased load.
+Horizontal Scaling: Involves distributing workload across multiple servers to improve performance and reliability. It typically involves adding more servers to the system rather than upgrading existing ones.
+Interviewer: What is sharding?
+
+Student:
+
+Sharding is a database partitioning technique where large databases are divided into smaller, more manageable parts called shards. Each shard contains a subset of data and can be stored on separate database servers. It improves scalability and performance by distributing data and workload across multiple servers.
+Interviewer: Keys in DBMS.
+
+Student:
+
+Keys in DBMS include:
+Primary Key: Uniquely identifies each record in a table.
+Foreign Key: Establishes and enforces a link between data in two tables.
+Candidate Key: A minimal set of attributes that can uniquely identify a record.
+Composite Key: A combination of two or more attributes to uniquely identify a record.
+Interviewer: Types of relationship.
+
+Student:
+
+Types of relationship in DBMS include:
+One-to-One: Each record in one table is related to exactly one record in another table.
+One-to-Many: One record in one table is related to multiple records in another table.
+Many-to-Many: Multiple records in one table are related to multiple records in another table through a junction table.
+Interviewer: Data abstraction in DBMS, three levels of it.
+
+Student:
+
+Data abstraction in DBMS refers to the separation of logical data structures from physical implementation details. The three levels are:
+Physical Level: Deals with how data is stored on storage devices.
+Logical Level: Focuses on the structure and organization of data without considering how it is stored.
+View Level: Provides a customized view of the database for specific users or applications, hiding irrelevant details.
+Interviewer: Indexing in DBMS.
+
+Student:
+
+Indexing in DBMS improves data retrieval speed by creating searchable keys (indexes) on columns in a database table. It speeds up query execution by reducing the number of records that need to be scanned.
+Interviewer: What is DDL (Data Definition Language)?
+
+Student:
+
+DDL (Data Definition Language) is used to define and manage the structure of database objects, such as tables, indexes, and views. Examples include commands like CREATE, ALTER, DROP.
+Interviewer: What is DML (Data Manipulation Language)?
+
+Student:
+
+DML (Data Manipulation Language) is used to manage and manipulate data within database objects. Examples include commands like INSERT, UPDATE, DELETE.
+Interviewer: What is normalization? Types of normalization.
+
+Student:
+
+Normalization is the process of organizing data in a database to reduce redundancy and dependency, improving data integrity and efficiency. Types include:
+First Normal Form (1NF): Ensures each column contains atomic values and eliminates repeating groups.
+Second Normal Form (2NF): Meets 1NF requirements and eliminates partial dependencies.
+Third Normal Form (3NF): Meets 2NF requirements and eliminates transitive dependencies.
+Boyce-Codd Normal Form (BCNF): A stricter form of 3NF that eliminates all non-trivial functional dependencies.
+Interviewer: What is denormalization?
+
+Student:
+
+Denormalization is the process of intentionally adding redundancy to a database schema to improve read performance by reducing the need for joins and complex queries.
+Interviewer: What is functional dependency?
+
+Student:
+
+Functional dependency is a relationship between two attributes in a relation (table), where one attribute uniquely determines another attribute's value.
+Interviewer: E-R Model?
+
+Student:
+
+E-R (Entity-Relationship) Model is a conceptual data model used to represent relationships between entities in a database. It uses entities (objects), attributes, and relationships to design a database schema.
+Interviewer: Conflict Serializability in DBMS.
+
+Student:
+
+Conflict Serializability in DBMS ensures that transactions execute in a serializable order, preserving the database's consistency despite concurrent execution. It prevents conflicts like read-write and write-write conflicts.
+Interviewer: What is CCP (Concurrency Control Protocols)?
+
+Student:
+
+CCP (Concurrency Control Protocols) are techniques used to manage concurrent access to shared data in a multi-user DBMS environment. Examples include:
+Locking: Acquiring and releasing locks on data items to prevent concurrent conflicting operations.
+Timestamping: Assigning timestamps to transactions to determine their order of execution.
+Multiversion Concurrency Control (MVCC): Maintaining multiple versions of data items to allow concurrent transactions to access data without interference.
+Interviewer: Entity, Entity Type, Entity Set, Weak Entity Set.
+
+Student:
+
+Entity: An object or thing in the real world that is distinguishable and identifiable, such as a person, place, or concept.
+
+Entity Type: A collection of similar entities sharing common properties or attributes.
+
+Entity Set: A collection of all instances (individual entities) of an entity type at any point in time.
+
+Weak Entity Set: An entity set that does not have enough attributes to form a primary key independently and relies on another entity (strong entity) for its existence.
+
+Interviewer: What are SQL commands? Types of them.
+
+Student:
+
+SQL (Structured Query Language) commands are used to communicate with and manipulate databases. Types include:
+DDL (Data Definition Language): Commands for defining and managing database objects (e.g., CREATE, ALTER, DROP).
+DML (Data Manipulation Language): Commands for manipulating data within database objects (e.g., SELECT, INSERT, UPDATE, DELETE).
+DCL (Data Control Language): Commands for controlling access to data (e.g., GRANT, REVOKE).
+DDL (Data Query Language): Commands for querying data from database objects (e.g., SELECT).
+Interviewer: Nested Queries in SQL?
+
+Student:
+
+Nested Queries in SQL are queries embedded within another query's WHERE clause to retrieve data based on conditions from multiple tables.
+Interviewer: What is JOIN? Explain types of JOINs.
+
+Student:
+
+JOIN in SQL combines rows from two or more tables based on a related column between them. Types of JOINs include:
+INNER JOIN: Retrieves rows that have matching values in both tables.
+LEFT JOIN (OUTER JOIN): Retrieves all rows from the left table and matching rows from the right table (or NULL if no match).
+RIGHT JOIN (OUTER JOIN): Retrieves all rows from the right table and matching rows from the left table (or NULL if no match).
+FULL OUTER JOIN: Retrieves all rows from both tables, including rows where there is no match in either table.
+Interviewer: Inner and Outer Join.
+
+Student:
+
+Inner Join: Returns rows when there is a match in both tables based on the JOIN condition.
+Outer Join: Returns all rows from one table and the matching rows (if any) from the other table based on the JOIN condition.
+Interviewer: Difference between 2-tier and 3-tier architecture.
+
+Student:
+
+2-tier Architecture: Also known as client-server architecture, consists of two layers: client and server. The client handles presentation and application logic, while the server manages data storage and retrieval.
+
+3-tier Architecture: Adds an additional layer (middleware or application server) between the client and server layers. It separates presentation, application logic, and data management functions for improved scalability and flexibility.
+
+Interviewer: Difference between TRUNCATE and DELETE command.
+
+Student:
+
+TRUNCATE: Removes all rows from a table, resetting auto-incremented columns and deallocating storage space. It is faster than DELETE as it doesn't log individual row deletions and cannot be rolled back.
+
+DELETE: Removes specific rows from a table based on the WHERE clause, allowing conditions to be applied. It logs each row deletion and can be rolled back using transactions.
+
+Interviewer: Difference between Intension and Extension in a Database.
+
+Student: Intension: Represents the schema or structure of a database, including definitions of tables, columns, constraints, and relationships.
+
+Extension: Refers to the instance or current state of a database at any given time, containing actual data stored in the database tables.
+
+Interviewer: Difference between share lock and exclusive lock, definition of lock.
+
+Student:
+
+Lock: A mechanism used to control access to shared resources (data) in a multi-user environment, preventing conflicts and ensuring data integrity.
+
+Shared Lock: Allows multiple transactions to read (share) a resource concurrently but prevents any transaction from modifying it until all reading transactions are complete.
+
+Exclusive Lock: Grants exclusive access to a resource, preventing other transactions from reading or modifying it until the locking transaction completes.
